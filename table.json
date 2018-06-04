@@ -1,0 +1,25 @@
+{
+  "title": "Table data",
+  "users": [
+    {
+      "name": "John",
+      "surname": "Johnson",
+      "age": 20
+    },
+    {
+      "name": "Pete",
+      "surname": "Peterson",
+      "age": 18
+    },
+    {
+      "name": "Ann",
+      "surname": "Hathaway",
+      "age": 19
+    },
+    {
+      "name": "Sofia",
+      "surname": "Williams",
+      "age": 23
+    }
+  ]
+}

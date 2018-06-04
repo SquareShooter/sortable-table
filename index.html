@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Table app</title>
+    <link rel="stylesheet" type="text/css" href="build/css/main.css">
+</head>
+<body>
+<div class="main-container">
+    <div class="js-app"></div>
+</div>
+<script type="module">
+    'use strict';
+
+    import {App} from './src/app/app.js';
+
+    new App({
+        el: document.querySelector('.js-app')
+    })
+</script>
+</body>
+</html>

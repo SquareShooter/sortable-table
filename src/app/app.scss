@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    color: #343c41;
+}
+
+.main-container {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.table-title {
+    text-align: center;
+}
+
+.no-data {
+    margin: 50px auto 20px;
+    text-align: center;
+    cursor: default;
+}
+
+.img-wrap {
+    text-align: center;
+
+    img {
+        display: inline-block;
+        max-width: 400px;
+    }
+}
