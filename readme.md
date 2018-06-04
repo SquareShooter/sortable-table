@@ -1,12 +1,12 @@
-# TABLE-APP
+# Render a sortable table based on json data
 
 ***
 
-To build css use:
+Start local server:
+**npm start**
+
+Build css:
 **npm run build-css**
 
-To watch css use:
+Watch css:
 **npm run watch-css**
-
-To start local server use:
-**npm start**
