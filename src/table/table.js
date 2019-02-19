@@ -39,6 +39,10 @@ export class Table {
             let data = JSON.parse(response),
                 cellsData = data['users'];
 
+            localStorage.setItem(cellsData, JSON.stringify(data));
+
+            data = JSON.parse(localStorage.getItem(cellsData));
+
             for (let item of cellsData) {
                 this.data.push(item);
             }
@@ -47,14 +51,22 @@ export class Table {
 
     _printTable(data) {
         let tbody = this.el.querySelector('tbody');
-        let tr;
 
         data.forEach((item) => {
-            tr = '<tr><td>' + item['name'] + '</td>' +
-                '<td>' + item['surname'] + '</td>' +
-                '<td>' + item['age'] + '</td></tr>';
+            let tdName = document.createElement('td'),
+                tdSurname = document.createElement('td'),
+                tdAge = document.createElement('td');
 
-            tbody.innerHTML += tr;
+            tdName.textContent = item['name'];
+            tdSurname.textContent = item['surname'];
+            tdAge.textContent = item['age'];
+
+            for (let i = 0; i < data.length; i++) {
+                let tr = document.createElement('tr');
+
+                tr.append(tdName, tdSurname, tdAge);
+                tbody.appendChild(tr);
+            }
         });
     }
 

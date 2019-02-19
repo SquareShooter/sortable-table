@@ -1,7 +1,5 @@
 # Render a sortable table based on json data
 
-***
-
 Start local server:
 **npm start**
 
