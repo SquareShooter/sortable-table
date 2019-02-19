@@ -6,11 +6,11 @@
 
 Install project dependencies.
 
-#### `npm start`
-Start local server.
-
 #### `npm run build-css`
 Build css.
 
 #### `npm run watch-css`
 Watch css.
+
+#### `npm start`
+Start local server.
