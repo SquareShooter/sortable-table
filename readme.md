@@ -1,10 +1,16 @@
 # Render a sortable table based on json data
 
-Start local server:
-**npm start**
+#### To run the app:
 
-Build css:
-**npm run build-css**
+#### `npm install`
 
-Watch css:
-**npm run watch-css**
+Install project dependencies.
+
+#### `npm start`
+Start local server.
+
+#### `npm run build-css`
+Build css.
+
+#### `npm run watch-css`
+Watch css.
